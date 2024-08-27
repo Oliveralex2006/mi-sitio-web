@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.side-section {
+    background-color: #212233; /* Fondo plomo */
+    width: 100%; /* Ancho completo en móviles */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.logo-space {
+    height: 150px;
+    border-bottom: 2px solid #FF6347; /* Línea tomate separadora */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-space img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.menu {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item {
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 2px solid #FF6347; /* Borde tomate */
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+    color: white;
+}
+
+.menu-item:hover {
+    background-color: #FF6347;
+    color: #fff;
+}
+
+.main-content {
+    width: 100%; /* Ancho completo en móviles */
+    padding: 20px;
+    box-sizing: border-box;
+    background-image: url('photoshoop-159299.jpg'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    font-size: 28px; /* Título más pequeño en móviles */
+    color: white;
+    font-family: 'Helvetica', sans-serif;
+}
+
+p {
+    font-size: 16px; /* Texto más pequeño en móviles */
+    margin-top: 20px;
+    line-height: 1.6;
+    color: #f0f0f0;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column; /* Elementos apilados en móviles */
+    align-items: center;
+    margin-top: 30px;
+}
+
+.whatsapp-button {
+    padding: 15px 30px;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    margin-bottom: 20px; /* Espacio debajo del botón */
+}
+
+.whatsapp-button:hover {
+    background-color: #1ebe57;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%; /* Ancho completo en móviles */
+    height: 200px; /* Altura ajustada para móviles */
+    margin-left: 0; /* Quitar margen en móviles */
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Media Query para pantallas más grandes */
+@media (min-width: 768px) {
+    body {
+        flex-direction: row;
+    }
+
+    .side-section {
+        width: 25%; /* Cuarta parte de la página en computadoras */
+    }
+
+    .main-content {
+        width: 75%; /* El resto de la página en computadoras */
+        padding: 40px;
+    }
+
+    h1 {
+        font-size: 36px; /* Título más grande en computadoras */
+    }
+
+    p {
+        font-size: 18px; /* Texto más grande en computadoras */
+    }
+
+    .content-wrapper {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .whatsapp-button {
+        margin-bottom: 0; /* Quitar margen en computadoras */
+    }
+
+    .carousel {
+        width: 50%; /* Ajustar el ancho del carrusel en computadoras */
+        height: 250px; /* Altura mayor en computadoras */
+        margin-left: 20px; /* Espaciado entre el botón y el carrusel en computadoras */
+    }
+}

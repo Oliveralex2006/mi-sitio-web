@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.back-link {
+    background-color: black;
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.back-link a {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 60px);
+}
+
+.section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+}
+
+#web-design {
+    background-image: url('pexels-pixabay-256502.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#ad-design {
+    background-image: url('photoshoop-159299.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+p {
+    font-size: 18px;
+    text-align: center;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Media Query para pantallas pequeñas (teléfonos) */
+@media only screen and (max-width: 768px) {
+    .main-container {
+        height: auto; /* Ajustar la altura para pantallas pequeñas */
+    }
+
+    h1 {
+        font-size: 28px; /* Reducir tamaño del título */
+    }
+
+    p {
+        font-size: 16px; /* Reducir tamaño del texto */
+        max-width: 300px; /* Reducir el ancho máximo del párrafo */
+    }
+
+    .button {
+        padding: 8px 16px; /* Ajustar padding del botón */
+        font-size: 14px; /* Reducir tamaño de fuente del botón */
+    }
+
+    .section {
+        padding: 10px; /* Reducir padding general */
+    }
+
+    .back-link a {
+        font-size: 14px; /* Reducir tamaño de fuente del enlace "Volver Atrás" */
+    }
+}
